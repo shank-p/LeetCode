@@ -4,6 +4,19 @@
     - LeetCode
 """
 
+"""
+    Approach 1:
+
+def twoSum(nums: list[int], target: int) -> list[int]:
+    for i in range(len(nums)):
+            try:
+                index = nums.index(target-nums[i])
+                if index != i:
+                    return [i, index]
+            except:
+                pass
+"""
+
 def twoSum(nums: list[int], target: int) -> list[int]:
     table = {}
     for index, value in enumerate(nums):
