@@ -10,7 +10,7 @@ def removeDuplicates(nums: list[int]) -> int:
     n = len(nums)
     prev = nums[0]
     i = 1
-    nums.append(-1)
+    nums.append(-999)
     while (i < n):
         if prev == nums[i]:
             nums.insert(n, nums.pop(i))
